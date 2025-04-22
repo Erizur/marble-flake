@@ -11,7 +11,7 @@
       version = "G1.0.1";
       downloadUrl = {
 		url = "https://github.com/NetworkNeighborhood/Marble/releases/download/${version}/marble-${version}.en-US.linux-x86_64.tar.bz2";
-		sha256 = "afe698161689d805adcf13e202d41b1a663f2f4e059d49f28f98788074467b45";
+		sha256 = "sha256:afe698161689d805adcf13e202d41b1a663f2f4e059d49f28f98788074467b45";
       };
 
       pkgs = import nixpkgs {
@@ -79,7 +79,7 @@
     in
     {
       packages."${system}" = {
-		default = self.packages."${system}".specific;
+		default = mkMarble {};
       };
     };
 }
