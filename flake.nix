@@ -31,7 +31,7 @@
 
       mkMarble = { }:
         let
-	  downloadData = downloadUrl."${variant}";
+	  downloadData = downloadUrl;
 	in
              pkgs.stdenv.mkDerivation {
     inherit version;
