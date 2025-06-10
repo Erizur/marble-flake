@@ -2,13 +2,13 @@
   description = "Marble Browser";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-24.11";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.05";
   };
 
   outputs = { self, nixpkgs }:
     let
       system = "x86_64-linux";
-      version = "G1.0.1";
+      version = "G1.1";
       downloadUrl = {
 		url = "https://github.com/NetworkNeighborhood/Marble/releases/download/${version}/marble-${version}.en-US.linux-x86_64.tar.bz2";
 		sha256 = "sha256:1pa6sa8py4phx74n3b43x275cx9vjfbq2z1d9jpci5g38v0af4il";
