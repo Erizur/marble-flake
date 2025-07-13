@@ -1,0 +1,10 @@
+{
+  "marble": {
+    "x86_64-linux": {
+      "version": "G1.1",
+      "sha1": "f7fe355369bce4dfb5b9fadb15abc43ab1019e7a",
+      "url": "https://github.com/NetworkNeighborhood/Marble/releases/download/G1.1/marble-G1.1.en-US.linux-x86_64.tar.bz2",
+      "sha256": "sha256-U8vEepOtHYEtd2hKyIgtJnAUIaE1UqcQ/1EXI9Ed8eg="
+    }
+  }
+}
