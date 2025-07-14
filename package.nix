@@ -78,6 +78,7 @@ in
 
     installPhase = ''
       mkdir -p "$out/bin"
+      cp -r "$src"/* "$out/bin"
       ln -s "$out/bin/${binaryName}" "$out/bin/marble-browser"
 
       install -D $desktopSrc/${desktopFile} $out/share/applications/${desktopFile}
