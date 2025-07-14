@@ -111,6 +111,6 @@ in
       sourceProvenance = with lib.sourceTypes; [binaryNativeCode];
       platforms = builtins.attrNames mozillaPlatforms;
       hydraPlatforms = [];
-      mainProgram = binaryName;
+      mainProgram = "marble-browser";
     };
   }
