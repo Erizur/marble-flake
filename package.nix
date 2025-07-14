@@ -81,6 +81,7 @@ in
       cp -r "$src"/* "$prefix/lib/${libName}"
 
       mkdir -p "$out/bin"
+      ln -s "$prefix/lib/${libName}/marble" "$out/bin/${binaryName}"
       ln -s "$prefix/lib/${libName}/marble" "$out/bin/marble-browser"
 
       mkdir -p "$out/lib/${libName}/distribution"
@@ -111,6 +112,6 @@ in
       sourceProvenance = with lib.sourceTypes; [binaryNativeCode];
       platforms = builtins.attrNames mozillaPlatforms;
       hydraPlatforms = [];
-      mainProgram = "marble-browser";
+      mainProgram = "binaryName";
     };
   }
