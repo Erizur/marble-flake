@@ -77,9 +77,14 @@ in
     '';
 
     installPhase = ''
+      mkdir -p "$prefix/lib/${libName}"
+      cp -r "$src"/* "$prefix/lib/${libName}"
+
       mkdir -p "$out/bin"
-      cp -r "$src"/* "$out/bin"
-      ln -s "$out/bin/${binaryName}" "$out/bin/marble-browser"
+      ln -s "$prefix/lib/${libName}/marble" "$out/bin/marble-browser"
+
+      mkdir -p "$out/lib/${libName}/distribution"
+      ln -s ${policiesJson} "$out/lib/${libName}/distribution/policies.json"
 
       install -D $desktopSrc/${desktopFile} $out/share/applications/${desktopFile}
 
