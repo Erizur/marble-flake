@@ -111,7 +111,8 @@ in
       changelog = "https://github.com/NetworkNeighborhood/Marble/releases";
       sourceProvenance = with lib.sourceTypes; [binaryNativeCode];
       platforms = builtins.attrNames mozillaPlatforms;
+      broken = stdenv.hostPlatform.isDarwin;
       hydraPlatforms = [];
-      mainProgram = "binaryName";
+      mainProgram = binaryName;
     };
   }

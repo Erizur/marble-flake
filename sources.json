@@ -5,6 +5,12 @@
       "sha1": "f7fe355369bce4dfb5b9fadb15abc43ab1019e7a",
       "url": "https://github.com/NetworkNeighborhood/Marble/releases/download/G1.1/marble-G1.1.en-US.linux-x86_64.tar.bz2",
       "sha256": "sha256-0HjxM1F+OXiI0Icu2T1wxAy6LRiMNenZPVy/IWZ+avY="
+    },
+    "x86_64-darwin": {
+      "version": "G1.1",
+      "sha1": "f7fe355369bce4dfb5b9fadb15abc43ab1019e7a",
+      "url": "https://github.com/NetworkNeighborhood/Marble/releases/download/G1.1/marble-G1.1.en-US.mac.dmg",
+      "sha256": "sha256-0HjxM1F+OXiI0Icu2T1wxAy6LRiMNenZPVy/IWZ+avY="
     }
   }
 }
