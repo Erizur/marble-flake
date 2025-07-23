@@ -37,7 +37,7 @@ in {
 
   config = lib.mkIf config.programs.marble-browser.enable {
     programs.marble-browser = {
-      package = pkgs.wrapFirefox (self.packages.${pkgs.stdenv.system}."marble-browser-unwrapped".override {
+      package = pkgs.wrapFirefox (self.packages.${pkgs.stdenv.system}."${name}-unwrapped".override {
         policies = config.programs.marble-browser.policies;
       }) {};
       policies = lib.mkDefault {
