@@ -17,7 +17,7 @@ def get_nix_hash [url: string]: nothing -> string  {
 }
 
 export def generate_sources []: nothing -> record {
-  let tag = get_latest_release "zen-browser/desktop"
+  let tag = get_latest_release "NetworkNeighborhood/Marble"
   let prev_sources: record = open ./sources.json
 
   if $tag == $prev_sources.version {
