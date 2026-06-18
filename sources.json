@@ -1,7 +1,7 @@
 {
-  "version": "G1.1",
+  "version": "G2-b1",
   "x86_64-linux": {
-    "url": "https://github.com/NetworkNeighborhood/Marble/releases/download/G1.1/marble-G1.1.en-US.linux-x86_64.tar.bz2",
-    "hash": "sha256-Y+3kGtch289nIgGktvK7EgXOGLTcDVlDLxK6fjggbNE="
+    "url": "https://github.com/NetworkNeighborhood/Marble/releases/download/G2-b1/marble-G2-b1.en-US.linux-x86_64.tar.xz",
+    "hash": "sha256-gFfOdzpG+mSgD5JY4jy3pLze7yshr27d3VhlLARBcCI="
   }
 }

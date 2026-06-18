@@ -6,7 +6,7 @@
   patchelfUnstable,
   adwaita-icon-theme,
   dbus-glib,
-  libXtst,
+  libxtst,
   curl,
   gtk3,
   alsa-lib,
@@ -47,7 +47,7 @@ stdenv.mkDerivation (finalAttrs: {
     alsa-lib
     adwaita-icon-theme
     dbus-glib
-    libXtst
+    libxtst
   ];
 
   runtimeDependencies = [
